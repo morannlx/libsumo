@@ -100,11 +100,11 @@ public final class MainShell {
         mainBuilder = (BuilderImpl) builder;
     }
 
-    public static Shell.Job newJob(boolean timesu, InputStream in) {
+    public static Shell.Job newJob(boolean mo, InputStream in) {
         return new PendingJob(timesu).add(in);
     }
 
-    public static Shell.Job newJob(boolean timesu, String... cmds) {
+    public static Shell.Job newJob(boolean mo, String... cmds) {
         return new PendingJob(timesu).add(cmds);
     }
 }
